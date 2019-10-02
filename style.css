@@ -1,0 +1,454 @@
+/*
+Version: 1.0.1
+Author: Platonic IT
+Author URI: https://www.platonicit.com/
+*/
+/* ====================================================================
+[TABLE OF CONTENTS]
+-------------------
+01. Global CSS
+*/
+/**
+* ===================================
+* = 01. Global CSS
+* ===================================
+*/
+/* Font Face */
+@font-face {
+    font-family: 'Helvetica';
+    src: url('assets/fonts/Helvetica.woff2') format('woff2'),
+        url('assets/fonts/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('assets/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('assets/fonts/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('assets/fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('assets/fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+html, body {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #777;
+    font-size: 14px;
+}
+
+select { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(https://image.flaticon.com/icons/png/512/25/25623.png);
+    background-position-x: calc(100% - 10px);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+
+button[type=submit], input[type=submit] {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fa, .fas {
+    padding-right: 0!important;
+}
+
+input, textarea {
+    padding: 10px 15px;
+    /* margin-bottom: 1em; */
+}
+
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, button[type="submit"]:hover, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button[type="submit"]:focus, .button:hover, body div.wpforms-container-full .wpforms-form input[type=submit]:hover, body div.wpforms-container-full .wpforms-form button[type=submit]:hover, body div.wpforms-container-full .wpforms-form .wpforms-page-button:hover {
+    background-color: #a0109b;
+}
+
+.opacity-1 {
+    opacity: 1!important;
+}
+
+.bg {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.btn {
+    border-radius: 25px;
+    position: relative;
+}
+
+.btn .icon {
+    position: absolute;
+    right: 50px;
+}
+
+.btn:hover .icon {
+    animation: bounceright 0.3s alternate ease infinite;
+}
+
+@keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+
+.btn-magenta {
+    background: #CC20C6;
+    color: #fff;
+}
+
+.btn-light {
+    background: #fff!important;
+    border: 0.5px solid #D1D1D1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.form-box .alert {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    border-width: 2px;
+}
+
+.form-box .btn {
+    border-radius: 25px;
+}
+
+.form-box .alert {
+    color: #4C4848;
+}
+
+.form-box .alert-success {
+    background: rgba(68,235,255,0.16);
+    border: 2px solid #44ebff;
+}
+
+.form-box .alert-warning {
+    background: #FFFFFC;
+}
+
+/* Topbar Style */
+.header-wrap > .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand img {
+    max-width: 200px;
+
+}
+
+.social-menu li {
+    display: inline-block;
+}
+
+.social-menu li a {
+    padding: 8px;
+    display: block;
+    font-size: 18px;
+}
+
+.navbar.navbar-light .navbar-nav .nav-link, .navbar a {
+    color: rgba(76,72,72,0.6);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-item:hover .nav-link, .navbar a:hover {
+    color:#CC20C6;
+}
+
+.navbar-collapse {
+    padding-left: 16px;
+    padding-right: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.header-wrap {
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-nav {
+    padding: 8px 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -1px 5px 5px rgba(0,0,0,0.1);
+    z-index: 9;
+    transition: all 0.25s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-nav .close-btn {
+    display: block;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 16px;
+    font-weight: 500;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.mobile-nav .close-btn span {
+    font-size: 11px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 4px;
+    opacity: 0.8;
+    line-height: 1.3;
+    vertical-align: text-bottom;
+}
+
+.mobile-menu li {
+    border-bottom: 1px solid rgba(0,0,0,0.035);
+}
+
+.mobile-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #555;
+    font-size: 16px;
+}
+
+
+.mobile-nav .social-menu a {
+    padding: 16px;
+    color: #CC20C6;
+}
+
+.mobile-nav.active-mobile-nav {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+body.active-mobile-nav:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+
+
+.navbar-light .navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+
+/* Content Style */
+.main-content {
+    padding: 50px 0;
+}
+
+.content-shadow {
+    border: 2px solid #CC20C6;
+    padding: 16px;
+    box-shadow: 6px 10px 20px rgba(0,0,0,0.1);
+    border-radius: 26px;
+}
+
+
+
+/* Form Style */
+.form-box {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #D155B4;
+    font-weight: 700;
+}
+
+.form-box h5 {
+    font-size: 17px;
+    color: #4C4848;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.form-control-lg {
+    font-size: 16px;
+}
+
+.form-box .form-control:disabled {
+    background: transparent;
+    resize: none;
+}
+
+.form-group .checkbox{
+    margin-right: 10px; 
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+        padding: 0!important;
+    }
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .social-menu {
+        display: none;
+    }
+    .navbar-brand img {
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        box-shadow: 0 0 0;
+    }
+    .social-menu {
+        display: none;
+    }
+    .navbar, .navbar-nav, .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-top: 28px;
+        padding-bottom: 24px;
+        border-bottom: 5px solid transparent;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        position: relative;
+    }
+    .navbar-light .navbar-nav .nav-item::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 4px;
+        width: 0;
+        transition: all 0.5s;
+        content: '';
+        background: #38C910;
+        transform: translateX(-50%)
+    }
+    .navbar-light .navbar-nav .nav-item.active::after, .navbar-light .navbar-nav .nav-item:hover::after {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    body {
+        font-size: 16px;
+    }
+    .form-control-lg {
+        font-size: 15px;
+    }
+    .social-menu {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .social-menu {
+        display: inherit;
+    }
+    .form-control-lg {
+        font-size: 16px;
+    }
+    .maplist {
+        height: 550px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
