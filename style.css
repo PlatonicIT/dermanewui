@@ -52,19 +52,19 @@ body {
 .feather1 img {
     left: 5%;
     top:20%;
-    position: absolute;
+    position: fixed;
     width: 350px;
     transform: rotate(180deg);
     z-index: -999;
-    opacity: 56%;
+    opacity: 0.56;
 }
 .feather2 img {
     right: 5%;
     top:80%;
-    position: absolute;
+    position: fixed;
     width: 350px;
     z-index: -999;
-    opacity: 56%;
+    opacity: 0.56;
 }
 
 select { 
@@ -353,6 +353,7 @@ body.active-mobile-nav:after {
     padding: 20px;
     max-width: 500px;
     margin: 0 auto;
+    background: #fff;
 }
 
 .form-title {
@@ -400,6 +401,20 @@ body.active-mobile-nav:after {
     .navbar-brand img {
         margin-left: 5%;
     }
+    .feather1 img {
+        display: none;
+    }
+    .feather2 img {
+        right: 5%;
+        top:80%;
+        width: 250px;
+        z-index: -999;
+        opacity: 0.56;
+    }
+    .main-content {
+        padding: 70px 0 180px;
+    }
+
 }
 @media screen and (min-width: 768px) {
     body {
