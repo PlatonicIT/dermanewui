@@ -56,6 +56,7 @@ body {
     width: 350px;
     transform: rotate(180deg);
     z-index: -999;
+    opacity: 56%;
 }
 .feather2 img {
     right: 5%;
@@ -63,6 +64,7 @@ body {
     position: absolute;
     width: 350px;
     z-index: -999;
+    opacity: 56%;
 }
 
 select { 
