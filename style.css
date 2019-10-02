@@ -48,6 +48,23 @@ body {
     font-size: 14px;
 }
 
+
+.feather1 img {
+    left: 5%;
+    top:20%;
+    position: absolute;
+    width: 350px;
+    transform: rotate(180deg);
+    z-index: -999;
+}
+.feather2 img {
+    right: 5%;
+    top:80%;
+    position: absolute;
+    width: 350px;
+    z-index: -999;
+}
+
 select { 
     -webkit-appearance: none;
     -moz-appearance: none;
