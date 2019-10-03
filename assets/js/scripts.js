@@ -1,7 +1,3 @@
-// $('.form-control').on('change', function () {
-//     $('#changeVlue').val('changed');
-//     console.log($('#changeVlue').val());
-// });
 /* * * * * * * * * * * * * * * * * *
 * Show/hide fields conditionally
 * * * * * * * * * * * * * * * * * */
@@ -49,8 +45,6 @@ $('.showOnChange').slideUp();
 $('.form-control').on('change', function () {
     $('.showOnChange').slideDown();
 });
-
-$('#maplist').on('click', 'li', function () { $(this).addClass('active').siblings().removeClass('active') });
 
 $('body.active-mobile-nav').on('click', function () {
     console.log($(this));

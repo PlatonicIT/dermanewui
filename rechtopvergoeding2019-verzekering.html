@@ -81,16 +81,17 @@
 	<header class="header-wrap">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="index.html"><img src="assets/images/dermasensation-logo.png" alt="DermaSensation Logo"></a>
+				<a class="navbar-brand" href="//www.dermasensation.nl/"><img src="assets/images/dermasensation-logo.png" alt="DermaSensation Logo"></a>
 				<button class="navbar-toggler" type="button">
 				  <span class="navbar-toggler-icon"></span>
 				</button>
 			  
 				<div class="collapse navbar-collapse d-none d-sm-block" id="navbar">
 					<ul class="social-menu ml-auto">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="//www.facebook.com/DermaSensation.nl"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="//twitter.com/dermasensation"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="//instagram.com/dermasensation"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="//www.linkedin.com/company/derma-sensation"><i class="fa fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -190,66 +191,6 @@
 	<!-- Vendor JS -->
 	<script type="text/javascript" src="assets/js/vendor.min.js"></script>
 	<!-- Custom Scripts -->
-    <!-- <script type="text/javascript" src="assets/js/scripts.js"></script>
-    <script>
-        function clearForm() {
-            document.getElementById('company_select').value = "";
-            x = document.getElementById('package');
-            y = document.getElementById('details');
-        
-            x.style.display = 'none';
-            y.style.display = 'none';
-        }
-        
-        function showPackages() {
-            company = document.getElementById('company_select').value;
-            email = "No email2";
-            x = document.getElementById('package');
-            if (company == "") {
-                return;
-            }
-            if (x.style.display == 'none') {
-                x.style.display = 'block';
-            }
-            $.ajax({ url: '/get_package2018_api.php',
-                    data: {company:company,email:email},
-                    type: 'post',
-                    success: function(data, status){
-                    document.getElementById('package').innerHTML = data;
-                    }
-            });
-        }
-        
-        function showDetails() {
-            package_details = document.getElementById('package_select').value;
-            treatment = document.getElementById('treatment_select').value;
-            company = document.getElementById('company_select').value;
-            email = "No email";
-            x = document.getElementById('details');
-        
-            if (package_details == "" || treatment == "") {
-                return;
-            }
-            if (x.style.display == 'none') {
-                x.style.display = 'block';
-            }
-            $.ajax({ url: '/get_details2018_rechtop_api.php',
-                    data: {company:company,package_details:package_details,treatment:treatment,email:email},
-                    type: 'post',
-                    success: function(data, status){
-                    document.getElementById('details').innerHTML = data;
-                    }
-            });
-        }
-        
-        function checkInsurance() {
-            var x = document.getElementById('insurance_finder');
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
-            } else {
-                x.style.display = 'block';
-            }
-        }
-    </script> -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>
